@@ -4,7 +4,7 @@ export default class Quote extends Component {
     render() {
         return (
             <div className="quote">
-                <div className="quote__container">
+                <div onClick={this.props.hideQuote.bind(this)} className="quote__container">
                     <div className="quote__message">
                         {this.props.message}
                     </div>

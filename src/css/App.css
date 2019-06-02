@@ -24,6 +24,7 @@
     border-radius: 10px;
     box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.05);
     transition: all 200ms;
+    cursor: pointer;
 }
 
 .option:active {
@@ -100,7 +101,8 @@
     box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.05);
     position: relative;
     min-height: 150px;
-    max-width: 600px
+    max-width: 600px;
+    cursor: pointer;
 }
 
 .quote__container::before {

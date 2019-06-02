@@ -25,6 +25,13 @@ class App extends Component {
     this.openForm();
   }
 
+  hideQuote = () => {
+    this.setState({
+      formClass: "form",
+      showQuote: false
+    })
+  }
+
   openForm = () => {
       this.setState({
         formClass: "form form--open",
@@ -61,7 +68,7 @@ class App extends Component {
   render() {
     if(this.state.showQuote) {
       return (
-        <Quote message={this.state.quoteMessage} subtitle={this.state.quoteSubtitle}/>
+        <Quote hideQuote={this.hideQuote} message={this.state.quoteMessage} subtitle={this.state.quoteSubtitle}/>
       )
     }
     else {
